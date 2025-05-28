@@ -1,5 +1,5 @@
 function firstNonRepeatedChar(str) {
-  let map = set Map();
+  let map = new Map();
 	let size = str.length;
 	for(let i=0;i<size;i++)
 		map.set( str[i] , ( map.get(str[i] ) || 0) + 1 );
